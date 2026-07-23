@@ -207,3 +207,126 @@ index.html
 شكرًا لكل من يستخدم Sword Editor أو يساهم في تطويره.
 
 كل فكرة أو مساهمة تساعد في جعل المشروع أفضل للجميع.
+Command System Documentation
+
+Overview
+
+This project includes an internal command system that allows users to control different features using simple text commands.
+
+The command system provides quick access to help topics, Dark Mode controls, automatic saving, and automatic file exporting.
+
+---
+
+Available Commands
+
+Help Commands
+
+"HALP"
+
+Displays all available help topics and supported commands.
+
+"HALP---darkmode"
+
+Shows detailed information about all Dark Mode commands and how to use them.
+
+---
+
+Dark Mode Commands
+
+"DarkMode---1"
+
+Activates Dark Mode after user confirmation.
+
+Usage:
+
+DarkMode---1
+
+The system will display:
+
+Sure [y/n]
+
+Enter:
+
+y
+
+and press Enter to enable Dark Mode instantly.
+
+---
+
+"DarkModeFor---10s"
+
+Enables Dark Mode immediately.
+
+After 10 seconds, the interface automatically returns to normal mode.
+
+---
+
+"DarkModeIn---5s"
+
+Schedules Dark Mode activation.
+
+The system waits for 5 seconds, then automatically enables Dark Mode.
+
+---
+
+Auto Save Commands
+
+"SaveAuto---1"
+
+Enables automatic saving.
+
+Features:
+
+- Displays a confirmation message immediately.
+- Saves the current work automatically every minute.
+
+---
+
+"SaveAuto---status"
+
+Disables automatic saving.
+
+After using this command, automatic saving will stop.
+
+---
+
+Auto Export Commands
+
+"SaveAutoExport---txt---1"
+
+Automatically exports a TXT copy every minute.
+
+Steps:
+
+1. Run the command:
+
+SaveAutoExport---txt---1
+
+2. The system asks:
+
+Enter file name--
+
+3. Enter a file name, for example:
+
+test
+
+4. Press Enter.
+
+5. The system asks:
+
+Sure [y/n]
+
+6. Enter:
+
+y
+
+7. Automatic TXT exporting starts every minute.
+
+---
+
+Notes
+
+- Commands are case-sensitive.
+- Always follow the confirmation messages before enabling features.
+- This command system is designed to provide a fast and simple way to control application features.
+- More commands may be added in future versions.
